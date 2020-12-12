@@ -3,4 +3,4 @@
 -[GridChess](GridChess/gridchess.html)
 -[Assignment1](Assignment1/homework1.html)
 -[chessboard](chessboard/chess.html)
--[TributeActivity](tribute.html)
+-[TributeActivity](TributeActivity/tribute.html)
