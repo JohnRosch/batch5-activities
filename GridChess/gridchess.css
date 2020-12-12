@@ -1,0 +1,40 @@
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url("chess.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.chessboard {
+    display: grid;
+    border-style: solid;
+    border-color: black;
+    height: 50vw;
+    width: 50vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.white {
+    background-color: rgb(235, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+   
+
+
+.black {
+    background-color: rgb(105, 94, 94); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+
