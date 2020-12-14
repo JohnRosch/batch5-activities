@@ -1,0 +1,178 @@
+body {
+ margin: 0%;
+ height: 100vh;
+}
+
+#header {
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    z-index: 2;
+    background-color: gray;
+    margin-bottom: 100px;
+    background-color: black;
+    position: fixed;
+    justify-content: center;
+    
+}
+
+#nav-bar {
+    color: black;
+    box-sizing: border-box;
+    display: block;
+  
+}
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-between;
+    list-style: none ;
+  }
+
+  #header-img {
+      width: 200px;
+      height: 90px;
+      
+  }
+  
+  li {
+    margin-left: 80px;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-size: 1em;
+    
+  }
+
+  a {
+      color: white;
+      text-decoration: none;
+  }
+
+
+  #about {
+      text-align: center;
+      background-image: url("q.jpg");
+      height: 100vh;
+      width: 100%;
+      color: white;
+      font-size: 2.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-repeat: no-repeat;
+      margin-bottom: 300px;
+  }
+
+  #cardcontainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 60vh;
+      background-size: cover;
+      width: 100%;
+      margin-bottom: 300px;
+
+  }
+
+  .card1 {
+     
+      width: 40%;
+      height: 100%;
+      background-image: url("e.jpg");
+      color: white;
+      text-align: center;
+      font-size: 2em;
+  }
+
+
+  .card2 {
+  
+    width: 40%;
+    height: 100%;
+    background-image: url("w.jpg");
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+  
+#video {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.videocontainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50%;
+    box-sizing: border-box;
+    margin-bottom: 400px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#formcontainer {
+    box-sizing: border-box;
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.form {
+
+    text-align: center;
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+
+
+.case {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    
+}
+
+
+.contactus {
+    display: flex;
+    justify-content: center;
+}
+
+
+.button {
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+    #header-img {
+        display: none;
+    }
+
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <section class="container">
+        <div class="banner">
+            <h1 id="title">Health Survey Form</h1>
+            <p id="description">
+                We just want to make sure that everyone will be safe
+                please answer all questions and be honest. Let's be honest and
+                fully cooperate to avoid the spreading of Covid-19 virus
+                to our company.
+            </p>
+        </div>
+            
+
+        <div class="form_container">
+            <form id="survey-form" action="post">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter name" required>
+
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter email" required>
+
+                <label for="number" id="number-label">Age</label>
+                <input id="number" type="number" placeholder="Enter age" min="1"
+                max="100" required>
+               <br>
+
+                <label for="dropdown">Gender</label>
+                <select id="dropdown" form="survey-form">
+                    <option value disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+
+                <label for="city">Please select City</label>
+                <br>
+                <fieldset id="city">
+                    <label for="r_Manila">
+                        <input type="radio" name="city" id="r_Manila" value="Manila"
+                        required>
+                        Manila
+                    </label>
+
+                    
+                        <label for="r_Antipolo">
+                            <input type="radio" name="city" id="r_Antipolo" value="Antipolo"
+                            required>
+                            Antipolo
+                        </label>
+                
+                        
+                        <label for="r_Caloocan">
+                            <input type="radio" name="city" id="r_Caloocan" value="Caloocan"
+                            required>
+                            Caloocan
+                        </label>
+              </fieldset>
+              <br>
+
+
+              <label for="condition">Health Condition, if you are experiencing
+                  some of the following symptoms;
+              </label>
+              <br>
+
+              <fieldset id="condition">
+                  <legend>
+                      <em>Check all that applies</em>
+                  </legend>
+
+                  <label for="c-nausea">
+                      <input type="checkbox" name="nausea-check" id="c-nausea" 
+                      value="nausea">
+                      Nausea
+                  </label>
+
+                  <label for="c-fever">
+                    <input type="checkbox" name="fever-check" id="c-fever" 
+                    value="fever">
+                    Fever
+                  </label>
+
+                    <label for="c-diarrhea">
+                        <input type="checkbox" name="diarrhea-check" id="c-diarrhea" 
+                        value="diarrhea">
+                        Diarrhea
+                    </label>
+
+                    <label for="c-lost">
+                        <input type="checkbox" name="lost-check" id="c-lost" 
+                        value="lost">
+                        Lost of Smell and Taste
+                    </label>
+
+                    <label for="c-muscle">
+                        <input type="checkbox" name="muscle-check" id="c-muscle" 
+                        value="muscle">
+                        Muscle Pain
+                    </label>
+
+                </fieldset>
+                <br>
+
+                <label for="comments">If you're feeling other symptopms</label>
+                <textarea style=" height: 70px; resize: vertical"
+                    id="comments" placeholder="for other symptoms right here">
+                </textarea>
+                
+                 <button id="submit">Submit</button>
+
+
+            </form>
+        
+        </div>
+    </section>
+    
+</body>
+</html>

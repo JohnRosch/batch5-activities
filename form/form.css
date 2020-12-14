@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid;    
+}
+
+.banner {
+    height: 90vh;
+    width: 40%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    background-image: url("hos.jpg");
+    background-size: cover;
+}
+
+.form_container {
+    height: 90vh;
+    width: 40%;
+    background-color: rgb(238, 235, 235);
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: rgb(17, 16, 16);
+}
+
+#survey-form {
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    border-radius: 5px;
+    position: relative;
+    font-size: 20px;
+}
+
+#survey-form input {
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px; 
+}
+
+#dropdown {
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px; 
+}
+
+#submit {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 40%;
+
+}
+
+@media (max-width: 1000px) {
+    .banner {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #survey-form {
+        width: 100%;
+       font-size: 16px;
+    }
+
+    body {
+        background-image: url("hos.jpg");
+        background-size: cover;
+        background-repeat: no repeat;
+    }
+
+    #submit {
+        margin-left: 35%;
+        margin-top: 3px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        width: 100px;
+        border-radius: 20px;
+    
+    }
+
+   
+    
+
+
+}
