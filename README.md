@@ -7,3 +7,4 @@
 -[Form](form/form.html)
 -[landing-page](landing_page/index.html)
 - https://codepen.io/jbtobias33/pen/PoGjGEN?editors=0011
+-[Calculator](Calculator/calcu.html)
