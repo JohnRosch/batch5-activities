@@ -1,6 +1,6 @@
 # WELCOME!
 ---
-1. ## Activities
+ ## Activities
 ---
  - [GridChess](GridChess/gridchess.html)
  - [Assignment1](Assignment1/homework1.html)
