@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>View source!</h1>
+</body>
+
+
+ <script>
+
+  let store = {
+  name: "Tobias-Bookstore",
+  inventory: undefined,
+  earnings: null,
+};
+
+let book = {
+  title: undefined,
+  quantity: undefined,
+  value: undefined,
+}
+
+
+//Function 1
+function addBook(title, quantity, value){
+ if (store.inventory === undefined) {
+  book = {};
+  book.title = title;
+  book.quantity = quantity;
+  book.value= value;
+  store.inventory = [book];
+  //store.inventory.push(book);
+  console.log("ADDED BOOK: " + title);
+
+ }else if (store.inventory !== undefined) {
+    var content = store.inventory.filter(function (obj) {
+      return obj.title === title;
+    }).length >= 1;
+ }
+ if (content === false){
+   book = {} ;
+   book.title = title;
+   book.quantity = quantity;
+   book.value = value;
+   store.inventory.push(book);
+   console.log("ADDED NEW BOOK " + title);
+  
+ }else {
+   console.log("Book Already Exist");
+ }
+}
+
+
+//Function 2
+function restockBook(title, quantity) {
+  var content = store.inventory.filter(function (obj) {
+    return obj.title === title;
+  }) .length >= 1;
+  var checktitle = store.inventory.filter((book) => book.title === title);
+
+  if (content === true) {
+    for(let i=0; i< checktitle.length; i++) {
+      checktitle[i].quantity += quantity;
+      console.log("Restocked the book " + checktitle[i].title);
+    }
+  } else {
+    console.log("Book is not listed in inventory!");
+  }
+}
+
+
+//Sub Function
+
+function addEarnings(points) {
+  store.earnings += points;
+}
+
+
+//Function 3
+function sellBook(title, quantity) {
+  for (let i = 0; i < store.inventory.length; i++) {
+    if (store.inventory[i].title === title) {
+      if (store.inventory[i].quantity == 0) {
+        console.log(
+          "Oops " + store.inventory[i].title + " is out of stock!"
+        );
+        // break;
+      } else if (store.inventory[i].quantity < quantity) {
+        console.log("Only " + store.inventory[i].quantity + " stocks left.");
+      } else {
+        store.inventory[i].quantity -= quantity;
+        addEarnings(store.inventory[i].value * quantity);
+        console.log("Transaction Successful!");
+      }
+    }
+  }
+}
+
+
+//Function 4
+function totalEarnings() {
+  console.log(store.name + " Total Earnings " + store.earnings + ": PHP");
+}
+
+
+function listInventory() {
+  for(let i = 0; i < store.inventory.length; i++){
+    console.log(store.inventory[i]);
+  }
+}
+
+
+ </script>
+</html>
