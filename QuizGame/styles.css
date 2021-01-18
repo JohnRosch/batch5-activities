@@ -1,0 +1,51 @@
+.container {
+    border: 53px;
+    background: #ffffff;
+    box-shadow:  31px 31px 61px #666666,
+               -31px -31px 61px #ffffff;
+    margin-top: 300px;
+    font-size: 2em;
+}
+  
+  .flex { 
+    display:flex;
+    background-color: cyan;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .field {
+    min-width: 200px;
+    min-height: 30px;
+    margin: 10px;
+  }
+  
+  .field-score {
+    min-width: 200px;
+    min-height: 30px;
+    margin: 10px;
+    background: yellow;
+    border: black solid 3px;
+    text-align: center;
+  }
+  
+  button {
+    height: 40px;
+    width: 200px;
+    outline: none;
+    background: white;
+    border: black solid 2px;
+  }
+  
+  button:active {
+    background: yellow;
+  }
+
+  .exitlabel {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  
