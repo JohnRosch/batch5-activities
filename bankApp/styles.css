@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: white;
+
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url("banks.jpg");
+    background-repeat: no-repeat;
+}
+
+.navBar {
+    background-color: #201f1f;
+    color: white;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: fixed;
+    text-decoration: none;
+}
+
+
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  
+    overflow: hidden;
+    justify-content: space-between;
+    list-style: none ;
+  }
+
+
+  
+  li {
+    margin-left: 80px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    
+  }
+
+  a {
+      color: white;
+      text-decoration: none;
+  }
+
+
+
+
+/*Create User CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.firstcont {
+    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.createUserCont {
+    height: 60vh;
+    width: 20vw;
+    margin-top: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 47px;
+    background: #ffffff;
+    box-shadow:  7px 7px 54px #a1a1a1,
+             -7px -7px 54px #ffffff;
+ 
+
+    
+}
+
+.formcont{
+    margin-top: 50px;
+}
+
+.first {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.second {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#submitBtn {
+    margin-top: 10px;
+
+}
+
+
+
+
+/*TRANSACTION CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.secondcont {
+   
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.deposit, .withdraw, .sendMoney {
+    height: 60vh;
+    width: 20vw;
+    margin-top: 250px;
+    align-items: center;
+    text-align: center;
+   
+    border-radius: 47px;
+    background: #ffffff;
+    box-shadow:  7px 7px 54px #a1a1a1,
+             -7px -7px 54px #ffffff;
+   
+}
+
+
+/*TRANSACTION CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.thirdcont {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.viewUser {
+    height: 60vh;
+    width: 20vw;
+    margin-top: 250px;
+    align-items: center;
+    text-align: center;
+   
+    border-radius: 47px;
+    background: #ffffff;
+    box-shadow:  7px 7px 54px #a1a1a1,
+             -7px -7px 54px #ffffff;
+ 
+
+}
+
+.userList {
+    height: 60vh;
+    width: 60vw;
+    margin-top: 250px;
+    align-items: center;
+    text-align: center;
+   
+    border-radius: 47px;
+    background: #ffffff;
+    box-shadow:  7px 7px 54px #a1a1a1,
+             -7px -7px 54px #ffffff;
+ 
+}
