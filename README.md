@@ -1,6 +1,6 @@
 # WELCOME!
 ---
- # Activities
+# Activities
 ---
  - [GridChess](GridChess/gridchess.html)
  - [Assignment1](Assignment1/homework1.html)
@@ -16,6 +16,6 @@
  - [Quiz-App](QuizGame/index.html)
  - [Book](book/index.html)
 
-
-# Draft Design only
- - [](bankApp/index.html)
+---
+# Draft Design only not official
+ - [Bank-App-Design only](bankApp/index.html)
