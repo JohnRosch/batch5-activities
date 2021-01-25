@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App v2 - Create User</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../src/main.js" defer></script>
+    <script src="../src/create_user.js" defer></script>
+    <link rel="stylesheet" href="../styles/create_user.css">
+    
+<body onload="Store.releaseStoredId()">
+
+ 
+<div class="container">
+            <h2> <i class='bx bxs-user-plus' ></i>  Create User</h2>
+    <form id="createUser-form">
+        <section>
+            <label for="username">Username</label>
+            <input type="text" id="username"  >
+            <!-- minlength="2" maxlength="24" required -->
+        </section>
+        <section>
+            <label for="password">Password</label>
+            <input type="password" id="password"  >
+            <!-- minlength="2" maxlength="24" required -->
+        </section>
+        <section>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName"  >
+            <!-- minlength="2" maxlength="24" required -->
+        </section>
+        <section>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" >
+            <!-- minlength="2" maxlength="24" required -->
+        </section>
+        <section>
+            <label for="email">Email Add</label>
+            <input type="email" id="email" > 
+            <!-- minlength="5" maxlength="32" required -->
+        </section>
+        <section>
+            <h3>Account Type</h3>
+            <input type="radio" id="savings" name="accountType" value="sa" checked>
+            <label for="savings">Savings(Php 2,000.00)</label><br>
+            <input type="radio" id="checking" name="accountType" value="ca">
+            <label for="checking">Checking(Php 10,000.00)</label><br>
+            <label for="addDeposit">Additional deposit:</label>
+            <input type="number" min="0" step="0.01" id="addDeposit" placeholder="0.0"> 
+        </section>
+            <button type="submit">Create User</button>
+    </form>
+            <a style="color: black;" href="../index.html">Cancel</a>
+
+</div>
+        <br><br><br><br>
+        <div class="footer">
+
+            <div class="footercontent1">
+                <h4></a><i class='bx bx-coin-stack'></i>
+                <i class='bx bx-dollar-circle' ></i>MyBankApp</li></h4>
+                
+                <div style="font-size:large;">
+                    <a href="../index.html">Home |</a>
+					
+					<a href="#"> Blog |</a>
+				
+					<a href="#"> About</a>
+                </div>
+
+                    <p style="font-size: small;">MyBankApp © 2021</p>
+            </div>
+
+            
+            <div class="footercontent2">
+                <br>
+                <i class='bx bx-location-plus' > Location</i> <br>
+                <i class='bx bx-phone-call' > 0907-444-4444</i> <br>
+                <i class='bx bx-mail-send' > AeroJohn@Project.com</i>
+            </div>
+
+            
+            <div class="footercontent3">
+                <h5>About this Project</h5>
+                <p style="font-size: small; margin-top: -10px; margin-bottom: 30px;">
+                Made by Aero Flamiano and John Benicio Tobias </p>
+                <div>
+                <i class='bx bxl-github'></i> <i class='bx bxl-javascript' ></i> 
+                <i class='bx bxl-html5' ></i>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>

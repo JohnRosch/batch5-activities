@@ -1,0 +1,112 @@
+body {
+    background-color: #ffffff;;
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+
+}
+
+.navBar {
+    height: 100px;
+    background-color: rgb(39, 36, 36);
+    font-size: 2em;
+    margin-top: -30px;
+    width: 100%;
+    
+}
+
+ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+li:hover {
+    color: rgb(255, 255, 8);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+   color: yellow;
+}
+
+button {
+    padding: 8px;
+    background-color: rgb(235, 226, 226);
+    cursor: pointer;
+    border: none;   
+}
+
+button:hover {
+    background-color: rgb(255, 255, 8);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.container1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../awa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content2 {
+    margin-top: 140px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.content1 {
+    margin-top: 140px;
+ 
+    height: 600px;
+    width: 400px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.footer {
+        height: 100px;
+        background-color: rgb(39, 36, 36);
+        font-size: 2em;
+        margin-top: -30px;
+        width: 100%;
+}

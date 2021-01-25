@@ -3,138 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create User</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Banking App v2</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="./src/main.js" defer></script>
 </head>
-<body>
-    <div id="home" class="main-container">
-        <div class="navBar">
-          <ul>
-            <h1> <a href="#home">MyBankApp</a></h1>
-            <li> <a href="#a">Create-User</a> </li>
-            <li> <a href="#b">Transaction</a> </li>
-            <li> <a href="#c">View-User</a> </li>
-        </ul>
-         <button type="submit" class="btn btn-primary">Log-out</button>
+
+
+<body onload="Store.releaseStoredId()">
+
+  
+    <div class="navBar">
+      <ul>
+        <li><a href="../index.html"></a><i class='bx bx-coin-stack'></i><i class='bx bx-dollar-circle' ></i>MyBankApp</li>
+       <li><a href="./pages/create_user.html">Create User</a></li>
+        <li><a id="listUsers" href="./pages/list_users.html">View User</a></li>
+        <li><button id="load">Load localStorage</button></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="container1">
+        <div class="content1">
+          <div>
+            <h3><i class='bx bxs-devices' ></i> Compatible</h3>
+            <h3><i class='bx bx-donate-heart' ></i> Very easy to use</h3>
+            <h3><i class='bx bxs-devices' ></i> Highly recommended</h3>
+          </div>
         </div>
-    </div>
 
-    
-<!-- CREATE USER **************************** -->
-    <div id="a" class="firstcont">
-      <div class="createUserCont">
-        <h1>Create User</h1>
-        
-        <div class="formcont">
-         <form action="">
+      </div>
 
-            <div class="first">
-            <input type="text" id="username" name="username" placeholder="Username">
+      <div class="container2">
+          <div class="content2">
+            <div>
+           <h1><i class='bx bx-coin-stack'></i><i class='bx bx-dollar-circle' ></i>MyBankApp</h1>
             </div>
 
-            <div class="second">
-            <input type="number" id="balance" name="balance" placeholder="Starting Balance">
+            <div>
+              <h3>Use this app Today!</h3>
+              <h3><i class='bx bx-check-square'></i>Deposit Cash</h3>
+              <h3><i class='bx bx-check-square'></i>Send Cash</h3>
+              <h3><i class='bx bx-check-square'></i>Withdraw Cash</h3>
+              <h3><i class='bx bx-check-square'></i>Edit Personal Information</h3>
             </div>
-            
-            <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
-         </form>
-        </div>      
+          </div>
       </div>
     </div>
-    
+
+  </body>
 
 
 
+<script>
+    document.querySelector('#load').addEventListener("click", (e) => {
+        e.preventDefault();
 
-<!-- TRANSACTION PAGE**************************** -->
-    <div id="b" class="secondcont">
-      
-      <div class="withdraw">
-        <br> <br> <br>
-        <h1>Withdraw</h1>
-        <br> <br> <br>
-        <form action="">
-
-          <div class="first">
-          <input type="text" id="username" name="username" placeholder="Username">
-          </div>
-
-          <div class="second">
-          <input type="number" id="balance" name="balance" placeholder="Amount">
-          </div>
-          
-          <button id="submitBtn" type="submit" class="btn btn-primary">Withdraw</button>
-       </form>
-      </div>
-
-      <div class="deposit">
-        <br> <br> <br>
-        <h1>Deposit</h1>
-        <br> <br> <br>
-        <form action="">
-
-          <div class="first">
-          <input type="text" id="username" name="username" placeholder="Username">
-          </div>
-
-          <div class="second">
-          <input type="number" id="balance" name="balance" placeholder="Amount">
-          </div>
-          
-          <button id="submitBtn" type="submit" class="btn btn-primary">Deposit</button>
-       </form>
-        
-      </div>
-
-      <div class="sendMoney">
-        <br> <br> <br>
-        <h1>Send Cash</h1>
-        <br> <br> <br>
-        <form action="">
-
-          <div class="first">
-          <input type="text" id="username" name="username" placeholder="Username">
-          </div>
-
-          <div class="second">
-          <input type="number" id="balance" name="balance" placeholder="Amount">
-          </div>
-          
-          <button id="submitBtn" type="submit" class="btn btn-primary">Send</button>
-       </form>
-        
-      </div>
-    </div> 
-
-
-
-
-  <!-- VIEW USER PAGE ******************************* -->
-
-  <div id="c" class="thirdcont">
-    <div class="viewUser">
-      <br> <br> <br>
-        <h1>View User</h1>
-        <br> <br> <br>
-        <form action="">
-
-          <div class="first">
-          <input type="text" id="username" name="username" placeholder="Username">
-          </div>
-
-          <div class="second">
-          <input type="number" id="balance" name="balance" placeholder="Amount">
-          </div>
-          
-          <button id="submitBtn" type="submit" class="btn btn-primary">Check</button>
-       </form>
-    </div>
-
-    <div class="userList">
-
-    </div>
-  </div> 
-
-</body>
+        let initialUsers = [{ 
+    id: '1611376423320887244497321791',
+    accountNumber : 'BNUSR1',
+    username : 'TOKYOTANAKA',
+    password : 'PASSWORD',
+    firstName : 'TOKYO',
+    lastName : 'TANAKA',
+    email : 'TOKYOTANAKA@EMAIL.COM',
+    accountType : 'CA',
+    balance : 15000.00,
+  }, {
+    id: '16113767227273616463362552902',
+    accountNumber : 'BNUSR2',
+    username : 'KAMIKAZEBOY',
+    password : 'PASSWORD',
+    firstName : 'KAMIKAZE',
+    lastName : 'BOY',
+    email : 'KAMIKAZEBOY@EMAIL.COM',
+    accountType : 'SA',
+    balance : 3000.00,
+  }]
+  localStorage.clear();
+  localStorage.setItem("users", JSON.stringify(initialUsers));
+    })
+</script>
 </html>

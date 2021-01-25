@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App v2 - Send Funds</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../src/main.js" defer></script>
+    <script src="../src/send.js" defer></script>
+    <link rel="stylesheet" href="../styles/user_send.css">
+</head>
+<body>
+    <div class="container">
+        <h3><i class='bx bxs-send' ></i>Send Cash</h3>
+        <ul id="accountDetails">
+
+        </ul>
+        <form id="send-form">
+            <br><br>
+            <i class='bx bxs-send' ></i>
+            <i class='bx bxs-send' ></i>
+            <i class='bx bxs-send' ></i>
+            <section>
+                <br>
+                <label for="accn">Account Number:</label>
+                <input type="text" id="accn"  >
+                <!-- minlength="2" maxlength="24" required -->
+            </section>
+            <section>
+                <label for="amount">Send Amount:</label>
+                <input type="number" min="0" step="0.01" id="amount"  >
+                <!-- minlength="2" maxlength="24" required -->
+            </section>
+            <br>
+        <button type="submit">Send Cash</button>
+        </form>
+        <a style="color: black;" href="./list_users.html">Cancel</a>
+    </div>
+
+
+    <br><br><br><br>
+        <div class="footer">
+
+            <div class="footercontent1">
+                <h4></a><i class='bx bx-coin-stack'></i>
+                <i class='bx bx-dollar-circle' ></i>MyBankApp</li></h4>
+                
+                <div style="font-size:large;">
+                    <a href="../index.html">Home |</a>
+					
+					<a href="#"> Blog |</a>
+				
+					<a href="#"> About</a>
+                </div>
+
+                    <p style="font-size: small;">MyBankApp © 2021</p>
+            </div>
+
+            
+            <div class="footercontent2">
+                <br>
+                <i class='bx bx-location-plus' > Location</i> <br>
+                <i class='bx bx-phone-call' > 0907-444-4444</i> <br>
+                <i class='bx bx-mail-send' > AeroJohn@Project.com</i>
+            </div>
+
+            
+            <div class="footercontent3">
+                <h5>About this Project</h5>
+                <p style="font-size: small; margin-top: -10px; margin-bottom: 30px;">
+                Made by Aero Flamiano and John Benicio Tobias </p>
+                <div>
+                <i class='bx bxl-github'></i> <i class='bx bxl-javascript' ></i> 
+                <i class='bx bxl-html5' ></i>
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>
