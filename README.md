@@ -16,3 +16,4 @@
  - [Quiz-App](QuizGame/index.html)
  - [Book](book/index.html)
  - [Bank-App (Collaboration with Aero Flamiano)](bankApp/index.html)
+ - [ChessGameJavascript](ChessApp/index.html)
